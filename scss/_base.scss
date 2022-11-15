@@ -1,0 +1,69 @@
+$color-dark:#000;
+$color-black:rgb(44, 44, 44);
+$color-brown:#f2a35eea;
+$color-secondary:#bbb;
+
+@font-face {
+    font-family: Tangerine;
+    src: url(../fonts/Tangerine-Regular.ttf);
+}
+
+
+
+$font-tangrin:Tangerine,
+cursive;
+
+$font-tahoma:'Segoe UI',
+Tahoma,
+Geneva,
+Verdana,
+sans-serif;
+
+
+@mixin flexstyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textstyle {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+@mixin center($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+@mixin anime {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 800px;
+}
+
+@mixin width {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin footspan {
+    width: 20%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
